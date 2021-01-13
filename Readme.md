@@ -4,6 +4,10 @@ $ npm init -y
 Em seguida instalamos o json-server como dependência:
 $npm i json-server
 
+## Verficar portas em uso no Windows antes de atachar qualquer serviço
+
+netsh interface ipv4 show excludedportrange protocol=tcp
+
 json-server --watch db.json --port 4260
 
 Observação:
