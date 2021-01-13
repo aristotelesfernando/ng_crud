@@ -22,3 +22,6 @@ para os components.
 "inlineTemplate": false,
 "inlineStyle": false,
 -> isso é consequência do parâmetro --minimal na criação do projeto
+
+##instalando o material-design
+ng add @angular/material
