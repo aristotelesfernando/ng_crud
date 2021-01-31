@@ -1,19 +1,29 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Caneta BIC Preta",
-            "price": 5.9
-        },
-        {
-            "id": 2,
-            "name": "Notebook Macbook Pro",
-            "price": 12000.75
-        },
-        {
-            "id": 3,
-            "name": "Sansumg S20+",
-            "price": 5000.5
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.9
+    },
+    {
+      "id": 2,
+      "name": "Notebook Macbook Pro",
+      "price": 12000.75
+    },
+    {
+      "id": 3,
+      "name": "Sansumg S20+",
+      "price": 5000.5
+    },
+    {
+      "name": "Inserido no formulário",
+      "price": "999",
+      "id": 4
+    },
+    {
+      "name": "Geladeira ProstFree",
+      "price": "3890",
+      "id": 5
+    }
+  ]
 }
