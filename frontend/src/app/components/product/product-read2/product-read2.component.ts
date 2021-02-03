@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
 import { Product } from '../product.model';
-import { ProductRead2DataSource, ProductRead2Item } from './product-read2-datasource';
+import { ProductRead2DataSource } from './product-read2-datasource';
 
 @Component({
   selector: 'app-product-read2',

@@ -4,12 +4,13 @@ import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root' //quando dizemos que o serviço vai estar disponivel ao nível de root, significa que ele é um singleton
 })
 export class ProductService {
 
-  baseUrl = "http://localhost:5020/products";
+  baseUrl = "http://localhost:5030/products";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
@@ -30,6 +31,18 @@ export class ProductService {
   read(): Observable<Product[]>
   {
     return this.http.get<Product[]>(this.baseUrl);
+  }
+
+  readById(id: string): Observable<Product>
+  {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Product>(url);
+  }
+
+  update(product: Product): Observable<Product>
+  {
+    const url = `${this.baseUrl}/${product.id}`;
+    return this.http.put<Product>(url, product);
   }
 
 }

@@ -38,7 +38,12 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 
+// localização para usar formato de moeda e casa decimal brasileiros
+import { LOCALE_ID } from '@angular/core';
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
 
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -72,7 +77,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatPaginatorModule,
     MatSortModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt-BR' } //configurando a localização pt-BR, continuando os imports acima
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
