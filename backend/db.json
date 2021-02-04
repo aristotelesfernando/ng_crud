@@ -7,18 +7,13 @@
     },
     {
       "id": 2,
-      "name": "Notebook Macbook Pro",
+      "name": "Notebook Macbook Pro M1",
       "price": 12000.75
     },
     {
       "id": 3,
-      "name": "Sansumg S20+",
+      "name": "Sansumg S20+ sem carregador trouxa",
       "price": 5000.5
-    },
-    {
-      "name": "Inserido no formulário",
-      "price": "999",
-      "id": 4
     },
     {
       "name": "Geladeira ProstFree",
